@@ -11,10 +11,12 @@
   "dependencies": {
     "@mantine/core": "9.4.0",
     "@mantine/hooks": "9.4.0",
+    "@meteocons/svg": "^0.1.0",
     "@vitejs/plugin-react": "latest",
     "dayjs": "^1.11.21",
     "react": "latest",
     "react-dom": "latest",
+    "react-indiana-drag-scroll": "^2.2.1",
     "vite": "latest"
   }
 }
