@@ -1,15 +1,15 @@
-import { Card, Text, Title } from "@mantine/core"; // UI
+import { Card, Text, Title } from "@mantine/core";
 
-function WeatherCard({ title, value, unit }) {
+function WeatherCard({ title, value, unit = "", description = "" }) {
   return (
     <Card className="glass-card" radius="xl" padding="lg">
-      <Title order={3} className="card-title">
-        {title}
+      <Text className="weather-card-title">{title}</Text>
+
+      <Title order={2} className="weather-card-value">
+        {value} {unit}
       </Title>
 
-      <Text className="card-value">
-        {value} {unit}
-      </Text>
+      {description && <Text className="weather-card-description">{description}</Text>}
     </Card>
   );
 }
